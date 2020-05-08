@@ -25,10 +25,9 @@ def reverse_array(ints)
 end
 
 def kesha_maker(array)
-  array.map do |word|
-    word[2] = "$"
+  array.each do |item|
+    item[2] = "$"
   end
-  return array
 end
 
 def find_a(array)
@@ -46,3 +45,4 @@ def add_s(array)
     i != 1 ? word << "s" : word
   end
 end
+
